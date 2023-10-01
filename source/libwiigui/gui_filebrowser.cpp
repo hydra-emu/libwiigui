@@ -32,8 +32,8 @@ GuiFileBrowser::GuiFileBrowser(int w, int h)
 	trigHeldA = new GuiTrigger;
 	trigHeldA->SetHeldTrigger(-1, WPAD_BUTTON_A | WPAD_CLASSIC_BUTTON_A, PAD_BUTTON_A);
 
-	btnSoundOver = new GuiSound(button_over_pcm, button_over_pcm_size, SOUND_PCM);
-	btnSoundClick = new GuiSound(button_click_pcm, button_click_pcm_size, SOUND_PCM);
+	btnSoundOver = new GuiSound(button_over_pcm, 2876, SOUND_PCM);
+	btnSoundClick = new GuiSound(button_click_pcm, 7204, SOUND_PCM);
 
 	bgFileSelection = new GuiImageData(bg_file_selection_png);
 	bgFileSelectionImg = new GuiImage(bgFileSelection);

@@ -76,7 +76,7 @@ WindowPrompt(const char *title, const char *msg, const char *btn1Label, const ch
 	GuiWindow promptWindow(448,288);
 	promptWindow.SetAlignment(ALIGN_CENTRE, ALIGN_MIDDLE);
 	promptWindow.SetPosition(0, -10);
-	GuiSound btnSoundOver(button_over_pcm, button_over_pcm_size, SOUND_PCM);
+	GuiSound btnSoundOver(button_over_pcm, 2876, SOUND_PCM);
 	GuiImageData btnOutline(button_png);
 	GuiImageData btnOutlineOver(button_over_png);
 	GuiTrigger trigA;
@@ -239,7 +239,7 @@ static void OnScreenKeyboard(char * var, u16 maxlen)
 
 	GuiKeyboard keyboard(var, maxlen);
 
-	GuiSound btnSoundOver(button_over_pcm, button_over_pcm_size, SOUND_PCM);
+	GuiSound btnSoundOver(button_over_pcm, 2876, SOUND_PCM);
 	GuiImageData btnOutline(button_png);
 	GuiImageData btnOutlineOver(button_over_png);
 	GuiTrigger trigA;
@@ -422,7 +422,7 @@ static int MenuSettings()
 	titleTxt.SetAlignment(ALIGN_LEFT, ALIGN_TOP);
 	titleTxt.SetPosition(50,50);
 
-	GuiSound btnSoundOver(button_over_pcm, button_over_pcm_size, SOUND_PCM);
+	GuiSound btnSoundOver(button_over_pcm, 2876, SOUND_PCM);
 	GuiImageData btnOutline(button_png);
 	GuiImageData btnOutlineOver(button_over_png);
 	GuiImageData btnLargeOutline(button_large_png);
@@ -627,7 +627,7 @@ static int MenuSettingsFile()
 	titleTxt.SetAlignment(ALIGN_LEFT, ALIGN_TOP);
 	titleTxt.SetPosition(50,50);
 
-	GuiSound btnSoundOver(button_over_pcm, button_over_pcm_size, SOUND_PCM);
+	GuiSound btnSoundOver(button_over_pcm, 2876, SOUND_PCM);
 	GuiImageData btnOutline(button_png);
 	GuiImageData btnOutlineOver(button_over_png);
 
@@ -776,7 +776,7 @@ void MainMenu(int menu)
 
 	ResumeGui();
 
-	bgMusic = new GuiSound(bg_music_ogg, bg_music_ogg_size, SOUND_OGG);
+	bgMusic = new GuiSound(bg_music_ogg, 3105649, SOUND_OGG);
 	bgMusic->SetVolume(50);
 	bgMusic->Play(); // startup music
 

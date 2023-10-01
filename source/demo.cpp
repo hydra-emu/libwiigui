@@ -53,7 +53,7 @@ main(int argc, char *argv[])
 	SetupPads(); // Initialize input
 	InitAudio(); // Initialize audio
 	fatInitDefault(); // Initialize file system
-	InitFreeType((u8*)font_ttf, font_ttf_size); // Initialize font system
+	InitFreeType((u8*)font_ttf, 28736); // Initialize font system
 	InitGUIThreads(); // Initialize GUI
 
 	DefaultSettings();
